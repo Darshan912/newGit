@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createKeyboard()
+        {
+           var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+           for(var i=0; i<str.length; i++)
+           {
+            var nextChar = str.charAt(i);
+            var btn = document.createElement("BUTTON");
+            btn.setAttribute("id","btn"+nextChar);
+            btn.setAttribute("innerHtml",nextChar);
+            btn.setAttribute("value",nextChar);
+            btn.setAttribute("text",nextChar);
+            btn.setAttribute("font-size","14px");
+            btn.setAttribute("background-color","#4CAF50");
+            document.body.appendChild(btn);
+            }
+        };
+    </script>
+</body>
+</html>
